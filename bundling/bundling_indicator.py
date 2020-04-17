@@ -11,6 +11,16 @@ bundling81_data = pd.read_excel('bundling81.xlsx',
 
 print('bundling81_data is loaded')
 
+bundling105_data = pd.read_excel('bundling105.xlsx',
+	                         sep=';', decimal=',',
+	                         encoding='ANSI')
+
+print('bundling105_data is loaded')
+
+bundling105_data.drop(bundling105_data.tail(1).index, inplace = True)
+
+# bundling105_data.to_excel('bundling105_mod.xlsx')
+
 # dont work auto parse dates(changed it manually for now)
 pd.to_datetime(bundling81_data['Дата последнего отбора'], dayfirst = True, format = '%d/%m/%Y %I:%M')
 
