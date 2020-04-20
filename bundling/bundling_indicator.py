@@ -11,6 +11,9 @@ bundling81_data = pd.read_excel('bundling81.xlsx',
 
 print('bundling81_data is loaded')
 
+# Need delete bundling81_data['Тип заказа'] != 'Standard Order'
+# bundling81_data['Тип заказа'].drop()
+
 bundling105_data = pd.read_excel('bundling105.xlsx',
 	                         sep=';', decimal=',',
 	                         encoding='ANSI')
