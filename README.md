@@ -28,8 +28,8 @@ Most of these tasks we can automate __easily__, so, why not to?
 
 
 ## Reports planned:
-- [ ] indicator 45/60 days
-- [ ] indicator promo
-- [ ] schedule performance
+- [X] indicator 45/60 days (10 min manually - 14 sec automatically)
+- [X] indicator promo (30 min manually - 24 sec automatically)
+- [X] schedule performance
 - [ ] bundling in time
 - [ ] effectiveness of flows
